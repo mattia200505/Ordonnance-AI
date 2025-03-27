@@ -13,7 +13,7 @@ const Modal = ({ isOpen, onClose, selectedPatient }) => {
 
   const { prenom, name, age, symptoms, antecedents, medicaments, ordonnanceText } = selectedPatient;
   const displayOrdonnance = ordonnanceText || "Ordonnance non disponible";
-  const displayName = `${prenom} ${name}`;
+  const displayName = `${prenom} `;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
